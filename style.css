@@ -1,24 +1,25 @@
 body{
     text-align: center; 
     color: white; 
+    background-color: hotpink; 
 }
 
 .hdr-taste-good-life{
-    background-color: grey
+    background-color: black;
+    height: 40rem; 
  }
 
 /* start header styling */
 
 header{ 
-    
     display:flex; 
     justify-content: space-between;
     align-content: center; 
 }
-/* left */
+
+/* left side header styling*/
 .hdr-left-container {
     display: Flex; 
-    /* float: left;  */
 }
 
 .logo-text{ 
@@ -33,7 +34,6 @@ header{
 .logo-text span{
     font-weight: bold !important;
     font-style: italic;
-  
 }
 
 .logo-text h3 , .logo-text h6{
@@ -50,7 +50,6 @@ header{
     margin: 1rem 1rem; 
     text-decoration: underline;
     color: white; 
-    
 }
 
 .hdr-img-container a{ 
@@ -62,7 +61,6 @@ header{
     width: 1.8rem;
     margin: 0.02rem 0.02rem;
     padding: 0px; 
-    
 }
 
 figure{
@@ -78,18 +76,81 @@ figure{
 /* A Taste of the good life style  */
 
 .Shop-Now a{ 
-    color: white; 
+    color: hotpink; 
+    font-size: 1.8rem; 
+
 }
 
 .taste-good-life h4{ 
     margin-bottom: .5rem; 
+    font-size: 2.5rem; 
 }
 .taste-good-life h2{ 
     font-style: italic; 
     margin-top: 0.7rem; 
+    margin-bottom: 1rem; 
+    font-size: 4rem; 
+
 }
 
 .taste-good-life p{ 
-    padding: 0 20rem 0 20rem; 
+    padding: 0 29rem 0 29rem; 
+    font-size: 1.3rem; 
+    text-align: center;
 }
 
+
+/* Welcome to Amalies Bakery */
+
+.special-offer{ 
+    display: flex; 
+    justify-content: center;
+}
+
+.offer-a , .offer-b{
+ background-color: tan;
+ width: 450px;  
+ height: 300px; 
+ padding: 0px; 
+ align-content: center; 
+ display: flex; 
+ flex-direction: column; 
+ text-decoration: none; 
+}
+/* the width and height of both elements bordering this comment should be the same */
+.Welcome-Bakery{
+    background-image: url(./images/Desktop/desktop-assets_0000s_0013_lycs-architecture-baxEyU9FL7g-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80rem; 
+}
+
+.Welcome-Bakery a{
+    padding: 0px; 
+    width: 450px;  
+    height: 300px; 
+    Margin: 2rem 4.5rem; 
+    justify-content: center; 
+    display: flex; 
+    padding: 0px; 
+    text-decoration: none; 
+    align-content: center; 
+    align-items: center; 
+}
+
+.offer-a h4, .offer-a h5, .offer-b h4, .offer-b h5{ 
+    margin: 1rem 1rem 1rem 1rem;    
+}
+
+.special-offer h4{
+    font-size: 1.5rem; 
+}
+
+.special-offer h5{
+    font-size: 1.9rem; 
+}
+
+.special-offer span{
+   color: hotpink;
+}
