@@ -1,15 +1,16 @@
 body{
     text-align: center; 
-    color: white; 
-    background-color: hotpink; 
+    color: darkmagenta; 
+    background-color: rgb(68, 54, 61); 
 }
 
 .hdr-taste-good-life{
-    background-color: black;
+    background-color: #000000;
     height: 40rem; 
+   
  }
 
-/* start header styling */
+                                            /* start header styling */
 
 header{ 
     display:flex; 
@@ -52,6 +53,10 @@ header{
     color: white; 
 }
 
+.main-menu a:hover{
+    color: hotpink; 
+}
+
 .hdr-img-container a{ 
     margin-right: 15px; 
     padding: 0px; 
@@ -73,12 +78,15 @@ figure{
     justify-content: center; 
 }
 
-/* A Taste of the good life style  */
+                                    /* A Taste of the good life style  */
 
 .Shop-Now a{ 
-    color: hotpink; 
+    color: skyblue; 
     font-size: 1.8rem; 
+}
 
+.Shop-Now a:hover{ 
+    color: hotpink
 }
 
 .taste-good-life h4{ 
@@ -100,11 +108,16 @@ figure{
 }
 
 
-/* Welcome to Amalies Bakery */
+                         /* Welcome Amalies Bakery */
 
 .special-offer{ 
     display: flex; 
     justify-content: center;
+}
+
+.offer-a:hover{
+    background-color: grey; 
+    color: Black;
 }
 
 .offer-a , .offer-b{
@@ -119,11 +132,11 @@ figure{
 }
 /* the width and height of both elements bordering this comment should be the same */
 .Welcome-Bakery{
-    background-image: url(./images/Desktop/desktop-assets_0000s_0013_lycs-architecture-baxEyU9FL7g-unsplash.jpg);
+    background-image: url(./images/Desktop/desktop-assets_0000s_0033_brooke-lark-08bOYnH_r_E-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 80rem; 
+    height: 60rem; 
 }
 
 .Welcome-Bakery a{
@@ -139,18 +152,67 @@ figure{
     align-items: center; 
 }
 
-.offer-a h4, .offer-a h5, .offer-b h4, .offer-b h5{ 
+.offer-a h4, .offer-a h5, .offer-a p{ 
     margin: 1rem 1rem 1rem 1rem;    
+    color: black;
 }
 
 .special-offer h4{
     font-size: 1.5rem; 
 }
 
+.offer-a {
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+  
+}
+
 .special-offer h5{
     font-size: 1.9rem; 
+    align-content: center;
 }
 
 .special-offer span{
    color: hotpink;
+}
+
+.L1-container{
+    display: flex; 
+    justify-content: center;
+    margin-top: 3.5rem;
+
+}
+
+.L2-container{ 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+    width: 20rem;
+    height: 20rem; 
+    align-content: space-between; 
+    height: 20rem;
+}
+
+.L2-container figure{ 
+    align-content: center;     
+}
+
+.L2-border{
+    Border-left: 6px dotted black; 
+    border-right: 6px dotted black;
+}
+
+.mini-title{
+    color: hotpink;
+}
+
+.main-title{
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.main-body{
+    width: 50%;
+    margin: auto;
 }
