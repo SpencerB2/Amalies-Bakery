@@ -1,7 +1,42 @@
+/* start univerisal or recycling styling */
 body{
     text-align: center; 
-    color: darkmagenta; 
-    background-color: rgb(68, 54, 61); 
+    color: white; 
+    background-color: black; 
+}
+
+a{
+    text-decoration: none;
+    color: skyblue; 
+}
+
+a:hover{ 
+    color: hotpink
+}
+
+.italics{ 
+    font-style: italic;
+}
+
+.bold{ 
+    font-weight: bold!important; 
+}
+
+.mini-title{
+    color: skyblue;
+    text-transform: uppercase;
+    font-size: 22px; 
+}
+
+.main-title{ 
+    font-style: italic; 
+    margin-top: 0.7rem; 
+    margin-bottom: 1rem; 
+    font-size: 55px; 
+}
+
+.main-body{
+    font-size: 18px;
 }
 
 .hdr-taste-good-life{
@@ -10,7 +45,7 @@ body{
    
  }
 
-                                            /* start header styling */
+                                          /* start header styling */
 
 header{ 
     display:flex; 
@@ -91,22 +126,16 @@ figure{
 
 .taste-good-life h4{ 
     margin-bottom: .5rem; 
-    font-size: 2.5rem; 
-}
-.taste-good-life h2{ 
-    font-style: italic; 
-    margin-top: 0.7rem; 
-    margin-bottom: 1rem; 
-    font-size: 4rem; 
-
 }
 
 .taste-good-life p{ 
-    padding: 0 29rem 0 29rem; 
-    font-size: 1.3rem; 
     text-align: center;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
-
 
                          /* Welcome Amalies Bakery */
 
@@ -137,6 +166,7 @@ figure{
     background-position: center;
     background-size: cover;
     height: 60rem; 
+    color: black; 
 }
 
 .Welcome-Bakery a{
@@ -192,27 +222,192 @@ figure{
     height: 20rem; 
     align-content: space-between; 
     height: 20rem;
+    background: silver; 
 }
 
 .L2-container figure{ 
     align-content: center;     
-}
+}   
 
 .L2-border{
     Border-left: 6px dotted black; 
     border-right: 6px dotted black;
 }
 
-.mini-title{
-    color: hotpink;
-}
-
-.main-title{
-    font-size: xx-large;
-    font-style: italic;
+.L2-container p {
+    padding: 0 .5rem 0 .5rem; 
 }
 
 .main-body{
-    width: 50%;
     margin: auto;
 }
+
+/* fresh cakes section styling */
+
+.fresh-cakes-section{ 
+    display: flex; 
+}
+
+.fresh-banner-container{ 
+    background-image: url(./images/Desktop/strawberry02.jpg);
+    background-position: center;
+    width: 75%;
+    height: 8rem; 
+    justify-content: center; 
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 2rem; 
+
+}
+
+.cake-text-item{ 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+    color: black; 
+    font-weight: bold;
+}
+
+.cake-text-item h4 , h2 , h3{ 
+    margin: 0.5rem;
+}
+
+.cake-text-item h2{ 
+    font-size: 35px;
+}
+
+.loaf-container{ 
+    background-color: white; 
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+    margin: 2rem;
+    padding: 1rem;
+}
+
+sup{
+    font-size: 5px;  
+}
+
+.loaf-container img{
+    width: 10rem; 
+    height: 10rem;
+}
+
+.Product-Catelog-container{ 
+    display: flex;
+    justify-content: center;
+
+}
+
+.loaf-container h5{
+    margin-bottom: 0rem; 
+}
+
+/* customer testimonials styling section */
+
+.testimonial-background{
+    background-image: url(./images/Desktop/bkg-bread.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center; 
+}
+
+.testimonial-container{ 
+    height: 50%; 
+    display: flex; 
+    align-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.guest-name{
+    color: skyblue;
+    text-transform: uppercase;
+    font-size: 22px; 
+    margin: 2rem 0px 1rem 0px ;
+}
+
+.guest-country{
+    color: skyblue;
+    text-transform: uppercase;
+    font-size: 18px; 
+    margin: 0px;
+}
+
+
+/* Latest News Styling */
+
+.news-container{ 
+    display: flex; 
+    justify-content: center;
+    text-align: left;
+}
+
+.latest-news-container{ 
+    display: flex; 
+    justify-content: center;
+}
+
+.news-logo-text{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 15rem; 
+    margin-left: 0.25rem; 
+}
+
+.news-logo-text h3{ 
+    margin: 0px;
+}
+
+.news-logo-text h6{ 
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: small;
+}
+
+.news-left-container , .news-right-container{ 
+    display: flex;
+    margin: 0 5rem 0 5rem; 
+}
+
+.news-date-text{ 
+    border-right: 4px solid slategrey; 
+}
+
+.news-date-text h5{
+    text-align: right;
+    margin-top: 0.1rem; 
+    padding: 0 .5rem 0 0;
+}
+
+/* Start Send a Message styling */
+
+#send-message{
+    background-image: url(./images/Desktop/desktop-assets_0000s_0013_lycs-architecture-baxEyU9FL7g-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60rem; 
+    color: black; 
+}
+
+.send-container{ 
+    background-color: grey;
+    height: 30rem;
+}
+
+.user-form{
+    display: flex; 
+    justify-content: center;
+}
+
+
+
