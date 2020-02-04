@@ -1,4 +1,8 @@
 /* start univerisal or recycling styling */
+html{ 
+    font-size: 16px;
+}
+
 body{
     text-align: center; 
     color: white; 
@@ -121,7 +125,14 @@ figure{
 }
 
 .Shop-Now a:hover{ 
-    color: hotpink
+    color: hotpink; 
+}
+
+.body-container { 
+    margin: 1rem 15rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .taste-good-life h4{ 
@@ -129,12 +140,7 @@ figure{
 }
 
 .taste-good-life p{ 
-    text-align: center;
-    display: flex; 
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    /* insert text decom */
 }
 
                          /* Welcome Amalies Bakery */
@@ -142,15 +148,16 @@ figure{
 .special-offer{ 
     display: flex; 
     justify-content: center;
+
 }
 
-.offer-a:hover{
-    background-color: grey; 
-    color: Black;
+.offer-a:hover , span:hover{
+    background-color: skyblue; 
+    color: Black
 }
 
 .offer-a , .offer-b{
- background-color: tan;
+ background-color: hotpink;
  width: 450px;  
  height: 300px; 
  padding: 0px; 
@@ -160,16 +167,21 @@ figure{
  text-decoration: none; 
 }
 /* the width and height of both elements bordering this comment should be the same */
-.Welcome-Bakery{
-    background-image: url(./images/Desktop/desktop-assets_0000s_0033_brooke-lark-08bOYnH_r_E-unsplash.jpg);
+#Welcome-Bakery{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+    url(./images/Desktop/desktop-assets_0000s_0033_brooke-lark-08bOYnH_r_E-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 60rem; 
-    color: black; 
+    color: white; 
 }
 
-.Welcome-Bakery a{
+#Welcome-Bakery a{
     padding: 0px; 
     width: 450px;  
     height: 300px; 
@@ -181,6 +193,8 @@ figure{
     align-content: center; 
     align-items: center; 
 }
+
+
 
 .offer-a h4, .offer-a h5, .offer-a p{ 
     margin: 1rem 1rem 1rem 1rem;    
@@ -195,7 +209,6 @@ figure{
     display: flex;
     align-content: center;
     justify-content: center; 
-  
 }
 
 .special-offer h5{
@@ -203,15 +216,15 @@ figure{
     align-content: center;
 }
 
+
 .special-offer span{
-   color: hotpink;
-}
+    color: purple;
+ }
 
 .L1-container{
     display: flex; 
     justify-content: center;
     margin-top: 3.5rem;
-
 }
 
 .L2-container{ 
@@ -222,7 +235,7 @@ figure{
     height: 20rem; 
     align-content: space-between; 
     height: 20rem;
-    background: silver; 
+    background: skyblue; 
 }
 
 .L2-container figure{ 
@@ -242,14 +255,19 @@ figure{
     margin: auto;
 }
 
-/* fresh cakes section styling */
+/* start fresh cakes section styling */
 
 .fresh-cakes-section{ 
     display: flex; 
 }
 
 .fresh-banner-container{ 
-    background-image: url(./images/Desktop/strawberry02.jpg);
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+    url(./images/Desktop/strawberry02.jpg);
     background-position: center;
     width: 75%;
     height: 8rem; 
@@ -265,7 +283,7 @@ figure{
     display: flex; 
     justify-content: center;
     flex-direction: column; 
-    color: black; 
+    color: white; 
     font-weight: bold;
 }
 
@@ -275,6 +293,11 @@ figure{
 
 .cake-text-item h2{ 
     font-size: 35px;
+    margin-top: 0%;
+}
+
+#fresh-cakes-section .mini-title{
+    margin-bottom: 1rem;
 }
 
 .loaf-container{ 
@@ -287,6 +310,7 @@ figure{
     align-items: center; 
     margin: 2rem;
     padding: 1rem;
+    border-radius: 1rem;
 }
 
 sup{
@@ -349,6 +373,8 @@ sup{
     display: flex; 
     justify-content: center;
     text-align: left;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
 }
 
 .latest-news-container{ 
@@ -391,12 +417,31 @@ sup{
 /* Start Send a Message styling */
 
 #send-message{
-    background-image: url(./images/Desktop/desktop-assets_0000s_0013_lycs-architecture-baxEyU9FL7g-unsplash.jpg);
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+    url(./images/Desktop/desktop-assets_0000s_0013_lycs-architecture-baxEyU9FL7g-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 60rem; 
+    height: 45rem; 
+    width: 100%;
     color: black; 
+}
+
+#send-message h2{
+    color: white;
+}
+
+#send-message h4{
+    padding-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+#send-message label{    
+    color: white;
 }
 
 .send-container{ 
@@ -410,4 +455,47 @@ sup{
 }
 
 
+/* start flexing    found this code on https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 */
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 200px;
+}
+
+.flex-outer > li > label + *{
+  flex: 0.1 0 100px;
+}
+
+.flex-outer li{
+    margin-bottom: 1rem;
+}
+
+.flex-outer input{
+    max-width: 250px;
+}
+
+button{ 
+    width: 10rem;
+    height: 4rem;
+    background-color: lime;
+    font-size: 2rem;
+    font-family: fantasy;
+    margin-top: 2rem;
+}
+
+.form-button{
+    padding-left: 12.5rem;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}

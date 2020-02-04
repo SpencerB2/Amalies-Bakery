@@ -20,9 +20,9 @@
             <div class="main-menu">
                 <nav>
                         <a href="#Taste"><span>Home</span></a>  
-                        <a href="#">About Us</a>
-                        <a href="#">Shop</a>
-                        <a href="#">Blog</a>
+                        <a href="#Welcome-Bakery">About Us</a>
+                        <a href="#fresh-cakes-section">Shop</a>
+                        <a href="#customer-testimonial">Blog</a>
                         <a href="#">Contact</a>
                 </nav>  
                 <div class="menu-logos">
@@ -45,8 +45,9 @@
             <h4 class="mini-title">Fresh Baked Everyday</h4>
 <!-- non-responsive.... at all -->
             <h2 class="main-title">A Taste Of The Good Life</h2>
-            <p class="main-body">We are a local business that enjoys bringing you the freshest product at the best price. We responsibly source all every ingredient that goes into our products. We offer a wide variety of baked goods and look forward to telling you our story while you visit. Come support your local business and have fun while doing it!</p>
-
+            <div class="body-container">
+                <p>We are a local business that enjoys bringing you the freshest product at the best price. We responsibly source all every ingredient that goes into our products. We offer a wide variety of baked goods and look forward to telling you our story while you visit. Come support your local business and have fun while doing it!</p>
+            </div>
             <div class="Shop-Now">
                 <a href="">SHOP NOW</a>
             </div>
@@ -54,7 +55,7 @@
 
     </section>
     
-    <section class="Welcome-Bakery">
+    <section id="Welcome-Bakery">
         <div class="special-offer">
             <a href="https://gamechangersmovie.com/benefits/maximizing-performance/the-plant-based-advantage/">
                 <div class="offer-a">
@@ -63,10 +64,10 @@
                     <p>Lorum Ipsum Lorum Ipsum</p>
                 </div>
             </a>
-            <a href="https://gamechangersmovie.com/benefits/maximizing-performance/the-plant-based-advantage/">
+            <a href="https://gamechangersmovie.com/benefits/smaximizing-performance/the-plant-based-advantage/">
                 <div class="offer-a">
                     <h4>Sign Up For Our Rewards Program</h4>
-                    <h5><span>JUNE</span> Special Offer</h5>
+                    <h5><span>JULY</span> Special Offer</h5>
                     <p>Lorum Ipsum Lorum Ipsum</p>
                 </div>
             </a>
@@ -74,7 +75,9 @@
         <div class="welcome-content-container">
             <h3 class="mini-title">SERVING YOU SINCE 1988</h3>
             <h2 class="main-title">Welcome to Amalie's Bakery</h2>
-            <p class="main-body">We are proud to say that The Store offers all of your bakery favorites/ All of which are locally owned and operated Cakes De Flour, Stoneground Bakery and cowboy grub just to name a few. Once you try their delivous items we know you will be coming back for more!</p>
+            <div class="body-container">
+                <p class="main-body">We are proud to say that The Store offers all of your bakery favorites/ All of which are locally owned and operated Cakes De Flour, Stoneground Bakery and cowboy grub just to name a few. Once you try their delivous items we know you will be coming back for more!</p>
+            </div>
         </div>
         <div class="L1-container">
              <div class="L2-container">
@@ -112,7 +115,7 @@
         <div class="fresh-banner-container">
             <div class="cake-text-item">
                 <h4> <span class="bold">NEW CAKE!!!</span> GET IT FOR <span class="bold">$12/PAX</span> (LIMITED) </h4>
-                <h2 class="italics ">Strawberry Pancake</h2>
+                <h2 class="italics">Strawberry Pancake</h2>
                 <div class="Shop-Now">
                     <a href="">SHOP NOW</a>
                 </div>
@@ -197,27 +200,36 @@
             <h4 class="mini-title">Keep in touch</h4>
             <h2 class="main-title">Send A Message</h2>
         </div>
-
-    <div class="send-container">
-        <form class="user-form" action="">
-            <div class="fn-container">
-                <label for="firstname">First Name: </label>
-                <input name="firstname" type="text">
-            </div>
-            <div class="ln-container">
-                <label for="lastname">Last Name</label>
-                <input name="lastname" type="text">
-            </div>
-            <div class="email-container">
-                <label for="emailaddress">Email Address: </label>
-                <input name="emailaddress" type="text">
-            </div>
-            <div class="message-container">
-                <label for="message">Send Us a Message: </label>
-                <input name="message" rows="10" cols="30">
-            </div>
-        </form>
-    </div>
+<!-- pulled form code from https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767       -->
+        <div class="form-container">
+          <form>
+            <ul class="flex-outer">
+              <li>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name here">
+              </li>
+              <li>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name here">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email here">
+              </li>
+              <li>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone here">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea rows="15"  id="message" placeholder="Enter your message here"></textarea>
+              </li>
+              <li class="form-button">
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          </form>
+        </div>
 
     </section>
 </body>
