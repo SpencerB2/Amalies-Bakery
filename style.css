@@ -1,4 +1,4 @@
-/* start univerisal or recycling styling */
+/* start univerisal or recycled styling */
 html{ 
     font-size: 16px;
 }
@@ -15,7 +15,7 @@ a{
 }
 
 a:hover{ 
-    color: hotpink
+    color: hotpink;
 }
 
 .italics{ 
@@ -30,6 +30,7 @@ a:hover{
     color: skyblue;
     text-transform: uppercase;
     font-size: 22px; 
+    margin-bottom: 0.7rem; 
 }
 
 .main-title{ 
@@ -139,25 +140,21 @@ figure{
     margin-bottom: .5rem; 
 }
 
-.taste-good-life p{ 
-    /* insert text decom */
-}
 
                          /* Welcome Amalies Bakery */
 
 .special-offer{ 
     display: flex; 
     justify-content: center;
-
 }
 
 .offer-a:hover , span:hover{
-    background-color: skyblue; 
+    background-color: hotpink; 
     color: Black
 }
 
 .offer-a , .offer-b{
- background-color: hotpink;
+ background-color: skyblue;
  width: 450px;  
  height: 300px; 
  padding: 0px; 
@@ -165,7 +162,9 @@ figure{
  display: flex; 
  flex-direction: column; 
  text-decoration: none; 
+ border-radius: 3rem;
 }
+
 /* the width and height of both elements bordering this comment should be the same */
 #Welcome-Bakery{
     background-image: 
@@ -235,7 +234,7 @@ figure{
     height: 20rem; 
     align-content: space-between; 
     height: 20rem;
-    background: skyblue; 
+    background: salmon; 
 }
 
 .L2-container figure{ 
@@ -367,7 +366,7 @@ sup{
 }
 
 
-/* Latest News Styling */
+/* Start Latest News Styling */
 
 .news-container{ 
     display: flex; 
@@ -455,7 +454,7 @@ sup{
 }
 
 
-/* start flexing    found this code on https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 */
+/* start flexing // found this code on https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 */
 .flex-outer li,
 .flex-inner {
   display: flex;
@@ -485,7 +484,7 @@ sup{
 button{ 
     width: 10rem;
     height: 4rem;
-    background-color: lime;
+    background-color: salmon;
     font-size: 2rem;
     font-family: fantasy;
     margin-top: 2rem;
@@ -499,3 +498,140 @@ label{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
+
+/* Start amalie's address styling */
+
+.contact-container {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem; 
+}
+
+.contact-info-container{ 
+    display: flex;
+    margin-top: 1rem;
+    justify-content: flex-start;
+    margin-left: 7rem; 
+    margin-right: 0px;
+    width: 500px; 
+}
+
+.contact-info-container img{
+    width: 3rem;    
+    height: 3rem;
+    padding-top: .8rem;
+    margin-right: 1rem; 
+}
+
+.contact-text{ 
+    font-style: Arial, helvetica, sans-serif;
+    text-align: left;
+    flex-direction: column; 
+    justify-content: center; 
+    font-size: 20px;
+    align-self: center;
+    display: flex; 
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+.contact-text span{
+    font-weight: bold !important;
+    font-style: italic;
+    color: skyblue;
+}
+
+.map-container{ 
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8rem;
+}
+
+.map-container img{ 
+    width: 35rem;
+}
+
+/* start media querie section  */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1124px) 
+  /* and (-webkit-min-device-pixel-ratio: 1)  */
+  {
+
+    html{ 
+        font-size: 10px;
+    }
+   
+    .mini-title{
+        color: skyblue;
+        text-transform: uppercase;
+        font-size: 16px; 
+        margin-bottom: 0.7rem; 
+    }
+
+    .main-title{ 
+        font-style: italic; 
+        margin-top: 0.7rem; 
+        margin-bottom: 1rem; 
+        font-size: 30px; 
+    }
+
+    .main-body{
+        font-size: 10px;
+    }
+
+    .special-offer{ 
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .offer-a:hover , span:hover{
+        background-color: hotpink; 
+        color: Black
+    }
+    
+    .offer-a , .offer-b{
+     background-color: skyblue;
+     width: 80%;  
+     height: 100px; 
+     padding: 0px; 
+     align-content: center; 
+     display: flex; 
+     flex-direction: column; 
+     text-decoration: none; 
+     border-radius: 3rem;
+    }
+
+    .contact-text{ 
+        font-style: Arial, helvetica, sans-serif;
+        text-align: left;
+        flex-direction: column; 
+        justify-content: center; 
+        font-size: 13px;
+        align-self: center;
+        display: flex; 
+        flex-direction: column;
+    }
+    .contact-info-container{ 
+        display: flex;
+        margin-top: 1rem;
+        justify-content: flex-start;
+        margin-left: 0.02rem; 
+        margin-right: 0px;
+        width: 300px; 
+        /* flex-direction: column; */
+    }
+    ul{
+        padding-left: 0.5rem;
+    }
+  }
+
+
+
+
